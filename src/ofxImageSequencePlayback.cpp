@@ -152,6 +152,8 @@ void ofxImageSequencePlayback::update() {
         int currentFrameIndex = getCurrentFrameIndex();
         int totalFrames = getTotalFrames();
         
+        mFrameIncrement = (currentTime - mLastUpdateTime) * mFPS;
+
         if(bPingPong) {
             newFrameIndex = currentFrameIndex + (bPingPongForwardComplete ? -mFrameIncrement : mFrameIncrement);
         }
