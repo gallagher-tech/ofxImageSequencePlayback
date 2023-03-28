@@ -173,6 +173,7 @@ void ofxImageSequencePlayback::update() {
                 }
                 else {
                     bComplete = true;
+                    newFrameIndex = totalFrames - 1;
                     dispatchCompleteNotification();
                 }
             }
@@ -189,6 +190,7 @@ void ofxImageSequencePlayback::update() {
                 }
                 else {
                     bComplete = true;
+                    newFrameIndex = 0;
                     dispatchCompleteNotification();
                 }
             }
