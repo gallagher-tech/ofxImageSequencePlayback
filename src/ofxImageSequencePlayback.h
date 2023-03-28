@@ -91,6 +91,8 @@ class ofxImageSequencePlayback {
 
     int getFrameIncrement() { return mFrameIncrement; }
     void setFrameIncrement(int frames) { mFrameIncrement = frames; }
+
+    ofVec2f getSize();
     
     ofEvent<ofEventArgs> sequenceCompleted;
 

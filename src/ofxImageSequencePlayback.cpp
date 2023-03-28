@@ -128,6 +128,10 @@ void ofxImageSequencePlayback::setShouldPingPong(bool shouldPingPong) {
     }
 }
 
+ofVec2f ofxImageSequencePlayback::getSize() {
+    return ofVec2f(mSequence.getWidth(), mSequence.getHeight());
+}
+
 void ofxImageSequencePlayback::setShouldLoop(bool shouldLoop) {
     bLooping = shouldLoop;
 
